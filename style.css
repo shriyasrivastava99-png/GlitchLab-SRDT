@@ -1,0 +1,647 @@
+
+/* =====================================
+   UNIVERSAL AND ELEMENT SELECTORS
+===================================== */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1, h2, h3, p {
+    margin-top: 0;
+}
+
+h1 {
+    font-size: 68px;
+    line-height: 1.2;
+}
+
+h2 {
+    font-size: 42px;
+}
+
+h3 {
+    font-size: 28px;
+}
+
+p {
+    font-size: 18px;
+}
+
+header {
+    padding: 22px 15px;
+}
+
+nav {
+    text-align: center;
+    margin: 15px auto;
+}
+
+nav a {
+    display: inline-block;
+    padding: 8px 12px;
+    margin: 4px;
+    color: inherit;
+}
+
+section {
+    padding: 55px 20px;
+}
+
+footer {
+    padding: 30px 15px;
+    text-align: center;
+}
+
+
+/* =====================================
+   COMMON CLASSES
+===================================== */
+
+.logo {
+    display: inline-block;
+    font-family: Georgia, serif;
+    font-size: 27px;
+    font-weight: bold;
+    color: inherit;
+}
+
+.logo span {
+    color: #FFD166;
+    font-size: 14px;
+}
+
+.eyebrow {
+    font-family: "Courier New", monospace;
+    font-size: 13px;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+.primary-button {
+    display: inline-block;
+    padding: 12px 24px;
+    margin: 12px auto;
+    border-radius: 25px;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.home-description,
+.style-description {
+    max-width: 700px;
+    margin: 0 auto 25px auto;
+    font-size: 20px;
+}
+
+.hero-decoration {
+    margin-top: 45px;
+    font-family: "Courier New", monospace;
+    font-size: 12px;
+    letter-spacing: 2px;
+    visibility: visible;
+}
+
+.feature-image {
+    display: block;
+    width: 90%;
+    max-width: 1000px;
+    height: auto;
+    margin: 30px auto;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 12px;
+}
+
+
+/* =====================================
+   HOME PAGE — ATTRACTIVE PURPLE THEME
+===================================== */
+
+.home-theme {
+    background-color: #0D0918;
+    color: #FFFFFF;
+}
+
+.home-header {
+    background-color: #171027;
+    text-align: center;
+    border-bottom: 1px solid #62429B;
+}
+
+.home-hero {
+    padding: 90px 20px;
+    background-color: #171027;
+    background-image:
+        linear-gradient(
+            rgba(13, 9, 24, 0.72),
+            rgba(13, 9, 24, 0.88)
+        ),
+        url("https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1600&q=85");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+.home-hero .eyebrow {
+    color: #FFD166;
+}
+
+.home-hero h1 {
+    color: #FFFFFF;
+    font-size: 76px;
+    font-family: Georgia, serif;
+}
+
+.home-hero h1 span {
+    color: #E0AAFF;
+    font-style: italic;
+    font-family: "Courier New", monospace;
+}
+
+.home-hero p {
+    color: #FFFFFF;
+}
+
+.home-hero .primary-button {
+    background-color: #C77DFF;
+    color: #190C29;
+}
+
+.hero-decoration {
+    color: #FFD166;
+}
+
+.worlds-section {
+    background-color: #0D0918;
+}
+
+.worlds-section .eyebrow {
+    color: #FFD166;
+}
+
+.worlds-section h2 {
+    color: #FFFFFF;
+    font-size: 44px;
+}
+
+.world-grid {
+    max-width: 1150px;
+    margin: 25px auto;
+    text-align: center;
+}
+
+.world-card {
+    display: inline-block;
+    vertical-align: top;
+    width: 310px;
+    max-width: 100%;
+    min-height: 290px;
+    margin: 10px;
+    padding: 25px 20px;
+    border: 1px solid;
+    border-radius: 14px;
+    text-align: center;
+    color: inherit;
+}
+
+.card-number {
+    font-family: "Courier New", monospace;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+.world-symbol {
+    margin: 15px auto;
+    font-size: 48px;
+}
+
+.world-card h3 {
+    font-size: 34px;
+    margin-bottom: 10px;
+}
+
+.world-card p {
+    font-size: 16px;
+}
+
+.card-arrow {
+    font-family: "Courier New", monospace;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.minimal-card {
+    background-color: #E9E8DD;
+    color: #344E41;
+    border-color: #C5CDBB;
+}
+
+.retro-card {
+    background-color: #FFD4B2;
+    color: #542344;
+    border-color: #F1B68F;
+}
+
+.glitch-card {
+    background-color: #21182F;
+    color: #FFFFFF;
+    border-color: #C77DFF;
+}
+
+.home-footer {
+    background-color: #171027;
+    border-top: 1px solid #62429B;
+}
+
+.home-footer p {
+    color: #E0D5F5;
+    font-size: 14px;
+}
+
+.home-footer > a:last-child {
+    color: #FFD166;
+    font-family: "Courier New", monospace;
+    font-size: 12px;
+}
+
+
+/* =====================================
+   MINIMAL PAGE
+===================================== */
+
+.minimal-theme {
+    background-color: #F5F0E8;
+    color: #344E41;
+    font-family: Georgia, serif;
+}
+
+.minimal-theme .sub-header {
+    background-color: #E7E0D3;
+}
+
+.minimal-theme nav a {
+    color: #344E41;
+}
+
+.minimal-theme .style-hero {
+    background-color: #E8EDE3;
+}
+
+.minimal-hero h1 {
+    font-family: Georgia, serif;
+    font-size: 72px;
+}
+
+.minimal-hero h1 em {
+    color: #617B4D;
+}
+
+.minimal-hero .eyebrow {
+    color: #405B35;
+}
+
+.minimal-theme .primary-button {
+    background-color: #344E41;
+    color: #FFFFFF;
+}
+
+.minimal-theme .style-content {
+    background-color: #F5F0E8;
+}
+
+.minimal-theme .feature-box {
+    background-color: #FFFFFF;
+    border: 1px solid #D7DDCF;
+}
+
+.minimal-theme .feature-box span {
+    color: #536F43;
+}
+
+.minimal-theme .palette-section {
+    background-color: #E8EDE3;
+}
+
+.minimal-theme .cream {
+    background-color: #FFFFFF;
+    color: #344E41;
+}
+
+.minimal-theme .sage {
+    background-color: #A3B18A;
+    color: #172117;
+}
+
+.minimal-theme .forest {
+    background-color: #344E41;
+    color: #FFFFFF;
+}
+
+.minimal-theme .site-footer {
+    background-color: #344E41;
+    color: #FFFFFF;
+}
+
+
+/* =====================================
+   RETRO PAGE — WARM PINK AND GOLD
+===================================== */
+
+.retro-theme {
+    background-color: #241025;
+    color: #FFFFFF;
+    font-family: Georgia, serif;
+}
+
+.retro-theme .sub-header {
+    background-color: #35132E;
+    color: #FFE3A3;
+}
+
+.retro-theme nav a {
+    color: #FFE3A3;
+}
+
+.retro-hero {
+    background-color: #35132E;
+    background-image:
+        linear-gradient(
+            rgba(35, 10, 34, 0.76),
+            rgba(35, 10, 34, 0.88)
+        ),
+        url("https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=1400&q=85");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.retro-hero h1 {
+    font-family: Georgia, serif;
+    font-size: 76px;
+    color: #FFFFFF;
+}
+
+.retro-hero h1 span {
+    color: #FFD166;
+    font-style: italic;
+}
+
+.retro-hero .eyebrow {
+    color: #FFD166;
+}
+
+.retro-hero .style-description {
+    color: #FFFFFF;
+}
+
+.retro-theme .primary-button {
+    background-color: #FFD166;
+    color: #35132E;
+}
+
+.retro-theme .style-content {
+    background-color: #241025;
+    color: #FFFFFF;
+}
+
+.retro-theme .feature-box {
+    background-color: #35132E;
+    border: 2px solid #A94F77;
+}
+
+.retro-theme .feature-box span {
+    color: #FFD166;
+}
+
+.retro-theme .palette-section {
+    background-color: #35132E;
+}
+
+.retro-pink {
+    background-color: #FF78A9;
+    color: #301024;
+}
+
+.retro-cyan {
+    background-color: #71F0F0;
+    color: #14202A;
+}
+
+.retro-purple {
+    background-color: #A56BDB;
+    color: #FFFFFF;
+}
+
+.retro-theme .site-footer {
+    background-color: #190C20;
+    color: #FFE3A3;
+}
+
+
+/* =====================================
+   GLITCH PAGE — NEON CYAN AND PURPLE
+===================================== */
+
+.glitch-theme {
+    background-color: #080B16;
+    color: #FFFFFF;
+    font-family: "Courier New", monospace;
+}
+
+.glitch-theme .sub-header {
+    background-color: #101326;
+    color: #00F5FF;
+}
+
+.glitch-theme nav a {
+    color: #00F5FF;
+}
+
+.glitch-hero {
+    background-color: #101326;
+    background-image:
+        linear-gradient(
+            rgba(5, 8, 22, 0.78),
+            rgba(5, 8, 22, 0.90)
+        ),
+        url("https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1400&q=85");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.glitch-hero h1 {
+    font-family: "Courier New", monospace;
+    font-size: 62px;
+    color: #FFFFFF;
+}
+
+.glitch-hero h1 span {
+    color: #00F5FF;
+}
+
+.glitch-hero .eyebrow {
+    color: #FF4DDE;
+}
+
+.glitch-hero .style-description {
+    color: #FFFFFF;
+}
+
+.glitch-theme .primary-button {
+    background-color: #00F5FF;
+    color: #080B16;
+}
+
+.glitch-theme .style-content {
+    background-color: #080B16;
+    color: #FFFFFF;
+}
+
+.glitch-theme .feature-box {
+    background-color: #101326;
+    border: 1px solid #8A4DFF;
+}
+
+.glitch-theme .feature-box span {
+    color: #00F5FF;
+}
+
+.glitch-theme .feature-box h3 {
+    color: #FF4DDE;
+}
+
+.glitch-theme .palette-section {
+    background-color: #101326;
+}
+
+.electric {
+    background-color: #B026FF;
+    color: #FFFFFF;
+}
+
+.neon {
+    background-color: #00F5FF;
+    color: #101014;
+}
+
+.midnight {
+    background-color: #11111B;
+    color: #FFFFFF;
+    border: 1px solid #00F5FF;
+}
+
+.glitch-theme .site-footer {
+    background-color: #101326;
+    color: #00F5FF;
+    border-top: 1px solid #8A4DFF;
+}
+
+
+/* =====================================
+   COMMON PAGE CONTENT
+===================================== */
+
+.style-content {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.style-content .eyebrow,
+.palette-section .eyebrow {
+    letter-spacing: 2px;
+}
+
+.style-content h2,
+.palette-section h2 {
+    margin-bottom: 35px;
+}
+
+.feature-grid {
+    max-width: 1100px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.feature-box {
+    display: inline-block;
+    vertical-align: top;
+    width: 300px;
+    max-width: 100%;
+    min-height: 190px;
+    margin: 10px;
+    padding: 22px;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.feature-box span {
+    font-size: 15px;
+}
+
+.feature-box h3 {
+    margin: 12px 0;
+}
+
+.feature-box p {
+    font-size: 16px;
+}
+
+.palette-section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.palette-grid {
+    max-width: 1000px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.palette-swatch {
+    display: inline-block;
+    vertical-align: top;
+    width: 260px;
+    max-width: 100%;
+    min-height: 145px;
+    margin: 10px;
+    padding: 22px;
+    border-radius: 10px;
+}
+
+.palette-swatch span {
+    font-family: "Courier New", monospace;
+    font-size: 13px;
+    letter-spacing: 2px;
+}
+
+.palette-swatch p {
+    margin-top: 8px;
+    font-family: "Courier New", monospace;
+    font-size: 15px;
+}
+
+.site-footer a {
+    color: inherit;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.site-footer p {
+    font-family: "Courier New", monospace;
+    font-size: 12px;
+}
