@@ -1,26 +1,34 @@
-# GlitchLab-SRDT
-GlitchLab is a creative website that explores different design styles and inspires users with unique colour combinations and ideas.
-# GlitchLab – Creative Design Exploration Website
+# GlitchLab
 
-## About the Project
-GlitchLab is a creative website developed using **HTML** to explore three unique design styles: **Minimal, Retro, and Glitch**. The project introduces different visual concepts through images, descriptions, and colour palettes, helping users discover creative ideas for their own websites and digital designs.
+GlitchLab is a multi-page design exploration website featuring three visual styles: Minimal, Retro and Glitch.
+
+## Files
+- `index.html` — homepage and interactive CSS Layout Playground
+- `minimal.html` — Minimal design page
+- `retro.html` — Retro design page
+- `glitch.html` — Glitch design page
+- `style.css` — shared styling, typography, Flexbox, Grid and Float examples
+- `script.js` — beginner JavaScript interactions
 
 ## Features
-- **Home Page:** Introduces GlitchLab and provides navigation to the three design styles.
-- **Minimal Design:** Explores simplicity, clean layouts, and balanced colours.
-- **Retro Design:** Showcases vintage-inspired visuals and colourful combinations.
-- **Glitch Design:** Presents bold visuals, digital-inspired themes, and vibrant colours.
-- **Colour Palettes:** Displays colour names and HEX codes for design inspiration.
-- **Multiple Pages:** Each design style has its own separate HTML page with navigation links.
+- Theme switcher (Dark / Light)
+- Read More / Read Less section
+- Random colour palette generator
+- Feedback form with basic input checks
+- Interactive Flexbox playground for direction, justify-content, flex-wrap, align-items and align-content
+- Flex item examples for grow, shrink, order and align-self
+- Float left/right and clear examples
+- Symmetric and asymmetric CSS Grid examples
+- Small Bootstrap card/grid example
 
-## Technologies Used
-- **HTML:** Used to create the website structure, headings, paragraphs, images, tables, and navigation links.
+## Technologies
+- HTML
+- CSS
+- Beginner JavaScript
+- Bootstrap 5.3 CSS (loaded from jsDelivr CDN)
 
-## Purpose of the Project
-The main purpose of GlitchLab is to encourage creativity and help users understand how different design styles and colour combinations create unique visual experiences. It also demonstrates the practical use of HTML concepts in a multi-page website.
+## Run locally
+Open `index.html` in a browser. An internet connection is required for the remote images and Bootstrap stylesheet.
 
-## Learning Outcomes
-Through this project, I practised HTML page structure, hyperlinks, image insertion, tables, lists, and navigation between multiple web pages.
-
-## Conclusion
-GlitchLab is a beginner-friendly creative project that combines web development with design exploration, making it a useful platform for learning HTML and discovering new visual ideas.
+## Notes
+The three design pages share `style.css` and load `script.js`. The extra files with repeated names from earlier experiments were not included in this cleaned package; the four canonical pages above are the active project pages.

@@ -1,11 +1,11 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GlitchLab | Explore Your Style</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">\n    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 
 <body class="home-theme">
@@ -68,13 +68,198 @@
                 </a>
             </div>
         </section>
+        <!-- GlitchLab Interactive Features -->
+
+        <section id="glitchlab-tools">
+
+            <h2>Explore GlitchLab</h2>
+
+            <p>
+                Experiment with different themes and discover
+                new colour combinations for your designs.
+            </p>
+
+            <!-- Theme Change -->
+            <h3>Explore Different Themes</h3>
+
+            <button id="themeButton">Switch Theme</button>
+
+
+            <!-- Colour Palette Generator -->
+            <h3>Colour Inspiration</h3>
+
+            <p>
+                Generate a random colour combination for your
+                next creative design.
+            </p>
+
+            <button id="paletteButton">Generate Colours</button>
+
+            <div id="paletteBox"></div>
+
+
+            <!-- Feedback Section -->
+            <h3>Share Your Experience</h3>
+
+            <p>
+                Tell us what you think about GlitchLab.
+            </p>
+
+            <table width="320">
+                <tr>
+                    <td>
+                        <form id="feedbackForm">
+
+                            <label for="userName">Name:</label>
+                            <input type="text" id="userName" placeholder="Enter your name">
+
+                            <label for="feedback">Your Feedback:</label>
+                            <textarea id="feedback" rows="3" placeholder="Write a short feedback"></textarea>
+
+                            <button type="submit">Submit</button>
+
+                        </form>
+                    </td>
+                </tr>
+            </table>
+
+
+            <!-- Read More Feature -->
+            <h3>Discover More</h3>
+            <p>GlitchLab brings three creative design styles together.</p>
+            <p id="extraText" hidden>
+                Explore visual ideas, compare colour palettes and learn how
+                different layouts can change the look of a website.
+            </p>
+            <button id="readButton" type="button">Read More</button>
+
+            <!-- Flexbox Playground -->
+            <h2>CSS Layout Playground</h2>
+            <p>Try basic Flexbox properties and see how the items move.</p>
+
+            <h3>Float Properties</h3>
+            <div class="float-example">
+                <span class="float-chip float-left">float: left</span>
+                <span class="float-chip float-right">float: right</span>
+                <p>
+                    Text flows around floated elements. The clear property
+                    keeps the next content below the floated items.
+                </p>
+                <div class="clear-float"></div>
+            </div>
+
+            <div class="layout-controls">
+                <label for="directionSelect">Flex direction</label>
+                <select id="directionSelect">
+                    <option value="row">row</option>
+                    <option value="row-reverse">row-reverse</option>
+                    <option value="column">column</option>
+                    <option value="column-reverse">column-reverse</option>
+                </select>
+
+                <label for="justifySelect">Justify content</label>
+                <select id="justifySelect">
+                    <option value="flex-start">start</option>
+                    <option value="center">center</option>
+                    <option value="space-between">space-between</option>
+                    <option value="space-around">space-around</option>
+                    <option value="space-evenly">space-evenly</option>
+                </select>
+
+                <label for="wrapSelect">Flex wrap</label>
+                <select id="wrapSelect">
+                    <option value="nowrap">nowrap</option>
+                    <option value="wrap" selected>wrap</option>
+                    <option value="wrap-reverse">wrap-reverse</option>
+                </select>
+
+                <label for="alignSelect">Align items</label>
+                <select id="alignSelect">
+                    <option value="stretch">stretch</option>
+                    <option value="flex-start">start</option>
+                    <option value="center" selected>center</option>
+                    <option value="flex-end">end</option>
+                </select>
+
+                <label for="alignContentSelect">Align content</label>
+                <select id="alignContentSelect">
+                    <option value="flex-start">start</option>
+                    <option value="center" selected>center</option>
+                    <option value="space-between">space-between</option>
+                    <option value="space-around">space-around</option>
+                    <option value="stretch">stretch</option>
+                </select>
+            </div>
+
+            <div id="flexPlayground" class="flex-playground" aria-live="polite"></div>
+
+            <h3>Flex Item Properties</h3>
+            <div class="flex-item-demo">
+                <div class="flex-property-item grow-item">Grow</div>
+                <div class="flex-property-item shrink-item">Shrink</div>
+                <div class="flex-property-item order-item">Order</div>
+            </div>
+
+            <h3>CSS Grid Layouts</h3>
+            <p>Symmetric grid: equal columns</p>
+            <div class="grid-demo symmetric-grid">
+                <div>1</div><div>2</div><div>3</div>
+                <div>4</div><div>5</div><div>6</div>
+            </div>
+
+            <p>Asymmetric grid: different column sizes</p>
+            <div class="grid-demo asymmetric-grid">
+                <div class="grid-wide">Wide column</div>
+                <div>Side</div>
+                <div>Small</div>
+                <div class="grid-wide">Wide column</div>
+            </div>
+
+            <!-- Small Bootstrap example -->
+            <h3>Bootstrap Cards</h3>
+            <p>This small example uses Bootstrap's responsive grid and card classes.</p>
+            <div class="container bootstrap-demo">
+                <div class="row g-3">
+                    <div class="col-md-4">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h4 class="card-title">Minimal</h4>
+                                <p class="card-text">Simple and balanced design.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h4 class="card-title">Retro</h4>
+                                <p class="card-text">Vintage colours and energy.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h4 class="card-title">Glitch</h4>
+                                <p class="card-text">Bold digital-inspired visuals.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
     </main>
 
     <footer class="home-footer">
         <a class="logo" href="index.html">GLITCHLAB<span>®</span></a>
         <p>Made to experiment. Built to create.</p>
         <a href="#top" onclick="window.scrollTo(0,0); return false;">BACK TO TOP ↑</a>
+
     </footer>
 
+    <script src="script.js"></script>
+
 </body>
+
 </html>
